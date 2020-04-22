@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "noImplicitReturns": true,
+      "noUnusedLocals": false,
+      "noImplicitAny": true,
+      "strictNullChecks": true,
+      "outDir": "lib",
+      "sourceMap": true,
+      "strict": true,
+      "target": "ESNext",
+      "experimentalDecorators": true,
+      "allowSyntheticDefaultImports": true,
+      "watch": false
+    },
+    "compileOnSave": false
+}  
