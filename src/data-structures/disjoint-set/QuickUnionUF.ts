@@ -30,7 +30,7 @@ export class QuickUnionUF {
      /**
      * {@link QuickUnionUF.findRoot} walks up the component tree until it finds and returns the root of the component at `i`
      * This method is named `root` in the slides which accompany the Coursera videos,
-     * but `find` in the Java code. I'm naming it [[`findRoot`]] to capture both names. 
+     * but `find` in the Java code. I'm naming it [[`findRoot`]] to encompass both names. 
      * 
      * @param i `i` is the index of the component for which we want to find the root.
      */
@@ -54,9 +54,34 @@ export class QuickUnionUF {
         }
     }
 
+    /**  
+     * [[`connected`]] is **Deprecated** according to [official Java code](https://github.com/kevin-wayne/algs4/blob/master/src/main/java/edu/princeton/cs/algs4/QuickUnionUF.java#L126)
+     * 
+     * Use two calls to [[`findRoot`]] instead:
+     * ```javascript 
+     * QuickFindUF.findRoot(p) === QuickFindUF.findRoot(q);
+     * ``` 
+     * @param s  Set this optional flag to **true** in order to suppress Deprecation exception.
+     */
+    public connected(p: number, q: number, s? : boolean): boolean | DeprecatedException {
+        if (!s) {
+            /** 
+            * Hacky exception handling approach to allow for test fulfillment based on error type checking
+            * */
+            try{ 
+                throw new DeprecatedException(this.connected, new URL('https://github.com/kevin-wayne/algs4/blob/master/src/main/java/edu/princeton/cs/algs4/QuickUnionUF.java#L126'));
+            }catch(e){
+                console.warn(e.stack)
+                return e;
+            }
+        } else {
+            return this.findRoot(p) === this.findRoot(q);
+        }
+    }
+
     /** 
-     * Merges the tree containing component `p` 
-     * with the tree containing component `q`. 
+     * Merges the set / node tree containing component `p` 
+     * with the set / node tree containing component `q`. 
      * @param  p one component
      * @param  q the other component 
      * @throws IllegalArgumentException unless
@@ -66,7 +91,9 @@ export class QuickUnionUF {
      * ```
      * */
     public union(p: number, q: number): void {
-        
+        const rootOfP = this.findRoot(p);
+        const rootOfQ = this.findRoot(q);
+        this.parent[rootOfP] = rootOfQ;
     }
 
     public toString(): string {
