@@ -116,8 +116,9 @@ export class QuickUnionUF {
             return e;
         }
 
-        const rootOfP = this.findRoot(p);
-        const rootOfQ = this.findRoot(q);
+        //Type cast to number since we've already validated
+        const rootOfP = <number>this.findRoot(p);
+        const rootOfQ = <number>this.findRoot(q);
         this.parent[rootOfP] = rootOfQ;
     }
 
