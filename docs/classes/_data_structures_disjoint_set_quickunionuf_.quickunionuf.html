@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>QuickFindUF | algos-one-princeton</title>
+	<title>QuickUnionUF | algos-one-princeton</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_data_structures_disjoint_set_quickfinduf_.html">&quot;data-structures/disjoint-set/QuickFindUF&quot;</a>
+					<a href="../modules/_data_structures_disjoint_set_quickunionuf_.html">&quot;data-structures/disjoint-set/QuickUnionUF&quot;</a>
 				</li>
 				<li>
-					<a href="_data_structures_disjoint_set_quickfinduf_.quickfinduf.html">QuickFindUF</a>
+					<a href="_data_structures_disjoint_set_quickunionuf_.quickunionuf.html">QuickUnionUF</a>
 				</li>
 			</ul>
-			<h1>Class QuickFindUF</h1>
+			<h1>Class QuickUnionUF</h1>
 		</div>
 	</div>
 </header>
@@ -77,7 +77,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">QuickFindUF</span>
+						<span class="target">QuickUnionUF</span>
 					</li>
 				</ul>
 			</section>
@@ -88,24 +88,23 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_data_structures_disjoint_set_quickfinduf_.quickfinduf.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_data_structures_disjoint_set_quickunionuf_.quickunionuf.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_data_structures_disjoint_set_quickfinduf_.quickfinduf.html#id" class="tsd-kind-icon">id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_data_structures_disjoint_set_quickunionuf_.quickunionuf.html#parent" class="tsd-kind-icon">parent</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_data_structures_disjoint_set_quickfinduf_.quickfinduf.html#connected" class="tsd-kind-icon">connected</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_data_structures_disjoint_set_quickfinduf_.quickfinduf.html#find" class="tsd-kind-icon">find</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_data_structures_disjoint_set_quickfinduf_.quickfinduf.html#getcount" class="tsd-kind-icon">get<wbr>Count</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_data_structures_disjoint_set_quickfinduf_.quickfinduf.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_data_structures_disjoint_set_quickfinduf_.quickfinduf.html#union" class="tsd-kind-icon">union</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_data_structures_disjoint_set_quickfinduf_.quickfinduf.html#validate" class="tsd-kind-icon">validate</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_data_structures_disjoint_set_quickunionuf_.quickunionuf.html#findroot" class="tsd-kind-icon">find<wbr>Root</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_data_structures_disjoint_set_quickunionuf_.quickunionuf.html#getcount" class="tsd-kind-icon">get<wbr>Count</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_data_structures_disjoint_set_quickunionuf_.quickunionuf.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_data_structures_disjoint_set_quickunionuf_.quickunionuf.html#union" class="tsd-kind-icon">union</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_data_structures_disjoint_set_quickunionuf_.quickunionuf.html#validate" class="tsd-kind-icon">validate</a></li>
 							</ul>
 						</section>
 					</div>
@@ -117,13 +116,13 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Quick<wbr>FindUF<span class="tsd-signature-symbol">(</span>n<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_data_structures_disjoint_set_quickfinduf_.quickfinduf.html" class="tsd-signature-type">QuickFindUF</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Quick<wbr>UnionUF<span class="tsd-signature-symbol">(</span>n<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_data_structures_disjoint_set_quickunionuf_.quickunionuf.html" class="tsd-signature-type">QuickUnionUF</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cssimsek/princeton-algorithms-part1-ts/blob/df5f8b2/src/data-structures/disjoint-set/QuickFindUF.ts#L10">src/data-structures/disjoint-set/QuickFindUF.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/cssimsek/princeton-algorithms-part1-ts/blob/df5f8b2/src/data-structures/disjoint-set/QuickUnionUF.ts#L14">src/data-structures/disjoint-set/QuickUnionUF.ts:14</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -132,7 +131,7 @@
 									<h5>n: <span class="tsd-signature-type">number</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_data_structures_disjoint_set_quickfinduf_.quickfinduf.html" class="tsd-signature-type">QuickFindUF</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="_data_structures_disjoint_set_quickunionuf_.quickunionuf.html" class="tsd-signature-type">QuickUnionUF</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -140,83 +139,54 @@
 			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="id" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> id</h3>
-					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></div>
+					<a name="parent" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> parent</h3>
+					<div class="tsd-signature tsd-kind-icon">parent<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cssimsek/princeton-algorithms-part1-ts/blob/df5f8b2/src/data-structures/disjoint-set/QuickFindUF.ts#L10">src/data-structures/disjoint-set/QuickFindUF.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/cssimsek/princeton-algorithms-part1-ts/blob/df5f8b2/src/data-structures/disjoint-set/QuickUnionUF.ts#L14">src/data-structures/disjoint-set/QuickUnionUF.ts:14</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p><a href="_data_structures_disjoint_set_quickunionuf_.quickunionuf.html#parent"><code>parent</code></a> is an int array where the value at index <code>i</code> denotes
+							the parent node of the component <code>i</code>. <code>i</code> parents itself if it is a root node.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="connected" class="tsd-anchor"></a>
-					<h3>connected</h3>
+					<a name="findroot" class="tsd-anchor"></a>
+					<h3>find<wbr>Root</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">connected<span class="tsd-signature-symbol">(</span>p<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, q<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, s<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><a href="_utils_deprecationexception_.deprecatedexception.html" class="tsd-signature-type">DeprecatedException</a></li>
+						<li class="tsd-signature tsd-kind-icon">find<wbr>Root<span class="tsd-signature-symbol">(</span>i<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cssimsek/princeton-algorithms-part1-ts/blob/df5f8b2/src/data-structures/disjoint-set/QuickFindUF.ts#L34">src/data-structures/disjoint-set/QuickFindUF.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/cssimsek/princeton-algorithms-part1-ts/blob/df5f8b2/src/data-structures/disjoint-set/QuickUnionUF.ts#L37">src/data-structures/disjoint-set/QuickUnionUF.ts:37</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p><a href="_data_structures_disjoint_set_quickfinduf_.quickfinduf.html#connected"><code>connected</code></a> is <strong>Deprecated</strong> according to <a href="https://github.com/kevin-wayne/algs4/blob/master/src/main/java/edu/princeton/cs/algs4/QuickFindUF.java#L124">official Java code</a></p>
+									<p><a href="_data_structures_disjoint_set_quickunionuf_.quickunionuf.html#findroot">QuickUnionUF.findRoot</a> walks up the component tree until it finds and returns the root of the component at <code>i</code>
+										This method is named <code>root</code> in the slides which accompany the Coursera videos,
+									but <code>find</code> in the Java code. I&#39;m naming it <a href="_data_structures_disjoint_set_quickunionuf_.quickunionuf.html#findroot"><code>findRoot</code></a> to capture both names.</p>
 								</div>
-								<p>Use <a href="_data_structures_disjoint_set_quickfinduf_.quickfinduf.html#find"><code>find</code></a> instead:</p>
-								<pre><code class="language-javascript">QuickFindUF.find(p) === QuickFindUF.find(q);</code></pre>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>p: <span class="tsd-signature-type">number</span></h5>
-								</li>
-								<li>
-									<h5>q: <span class="tsd-signature-type">number</span></h5>
-								</li>
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> s: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Set this optional flag to <strong>true</strong> in order to suppress Deprecation exception.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> | </span><a href="_utils_deprecationexception_.deprecatedexception.html" class="tsd-signature-type">DeprecatedException</a></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="find" class="tsd-anchor"></a>
-					<h3>find</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">find<span class="tsd-signature-symbol">(</span>i<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><a href="_utils_illegalargumentexception_.illegalargumentexception.html" class="tsd-signature-type">IllegalArgumentException</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/cssimsek/princeton-algorithms-part1-ts/blob/df5f8b2/src/data-structures/disjoint-set/QuickFindUF.ts#L54">src/data-structures/disjoint-set/QuickFindUF.ts:54</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>i: <span class="tsd-signature-type">number</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>An element in <a href="_data_structures_disjoint_set_quickfinduf_.quickfinduf.html#id"><code>id</code></a></p>
+										<p><code>i</code> is the index of the component for which we want to find the root.</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><a href="_utils_illegalargumentexception_.illegalargumentexception.html" class="tsd-signature-type">IllegalArgumentException</a></h4>
-							<p>The returned number tells us which component the param <strong>i</strong> (item / object) belongs to</p>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -230,7 +200,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cssimsek/princeton-algorithms-part1-ts/blob/df5f8b2/src/data-structures/disjoint-set/QuickFindUF.ts#L21">src/data-structures/disjoint-set/QuickFindUF.ts:21</a></li>
+									<li>Defined in <a href="https://github.com/cssimsek/princeton-algorithms-part1-ts/blob/df5f8b2/src/data-structures/disjoint-set/QuickUnionUF.ts#L26">src/data-structures/disjoint-set/QuickUnionUF.ts:26</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -250,7 +220,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cssimsek/princeton-algorithms-part1-ts/blob/df5f8b2/src/data-structures/disjoint-set/QuickFindUF.ts#L110">src/data-structures/disjoint-set/QuickFindUF.ts:110</a></li>
+									<li>Defined in <a href="https://github.com/cssimsek/princeton-algorithms-part1-ts/blob/df5f8b2/src/data-structures/disjoint-set/QuickUnionUF.ts#L72">src/data-structures/disjoint-set/QuickUnionUF.ts:72</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -261,25 +231,43 @@
 					<a name="union" class="tsd-anchor"></a>
 					<h3>union</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">union<span class="tsd-signature-symbol">(</span>p<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, q<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="_utils_illegalargumentexception_.illegalargumentexception.html" class="tsd-signature-type">IllegalArgumentException</a></li>
+						<li class="tsd-signature tsd-kind-icon">union<span class="tsd-signature-symbol">(</span>p<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, q<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cssimsek/princeton-algorithms-part1-ts/blob/df5f8b2/src/data-structures/disjoint-set/QuickFindUF.ts#L82">src/data-structures/disjoint-set/QuickFindUF.ts:82</a></li>
+									<li>Defined in <a href="https://github.com/cssimsek/princeton-algorithms-part1-ts/blob/df5f8b2/src/data-structures/disjoint-set/QuickUnionUF.ts#L68">src/data-structures/disjoint-set/QuickUnionUF.ts:68</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Merges the tree containing component <code>p</code>
+									with the tree containing component <code>q</code>.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>IllegalArgumentException unless</p>
+										<pre><code>let n = <span class="hljs-keyword">this</span>.parent.length;
+!!((<span class="hljs-number">0</span> &lt;= p &lt; n) &amp;&amp; (<span class="hljs-number">0</span> &lt;= q &lt; n));</code></pre></dd>
+								</dl>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>p: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>one component</p>
+									</div>
 								</li>
 								<li>
 									<h5>q: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the other component</p>
+									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol"> | </span><a href="_utils_illegalargumentexception_.illegalargumentexception.html" class="tsd-signature-type">IllegalArgumentException</a></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -293,12 +281,12 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cssimsek/princeton-algorithms-part1-ts/blob/df5f8b2/src/data-structures/disjoint-set/QuickFindUF.ts#L72">src/data-structures/disjoint-set/QuickFindUF.ts:72</a></li>
+									<li>Defined in <a href="https://github.com/cssimsek/princeton-algorithms-part1-ts/blob/df5f8b2/src/data-structures/disjoint-set/QuickUnionUF.ts#L47">src/data-structures/disjoint-set/QuickUnionUF.ts:47</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Validate that <code>i</code> is a valid index in the <code>id</code> array</p>
+									<p>Validate that <code>i</code> is a valid index in the <code>parent</code> array</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -319,10 +307,10 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="../modules/_data_structures_disjoint_set_quickfinduf_.html">&quot;data-<wbr>structures/disjoint-<wbr>set/<wbr>Quick<wbr>FindUF&quot;</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class="current tsd-kind-module">
 						<a href="../modules/_data_structures_disjoint_set_quickunionuf_.html">&quot;data-<wbr>structures/disjoint-<wbr>set/<wbr>Quick<wbr>UnionUF&quot;</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -347,31 +335,28 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-module">
-						<a href="_data_structures_disjoint_set_quickfinduf_.quickfinduf.html" class="tsd-kind-icon">Quick<wbr>FindUF</a>
+						<a href="_data_structures_disjoint_set_quickunionuf_.quickunionuf.html" class="tsd-kind-icon">Quick<wbr>UnionUF</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="_data_structures_disjoint_set_quickfinduf_.quickfinduf.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="_data_structures_disjoint_set_quickunionuf_.quickunionuf.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="_data_structures_disjoint_set_quickfinduf_.quickfinduf.html#id" class="tsd-kind-icon">id</a>
+								<a href="_data_structures_disjoint_set_quickunionuf_.quickunionuf.html#parent" class="tsd-kind-icon">parent</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_data_structures_disjoint_set_quickfinduf_.quickfinduf.html#connected" class="tsd-kind-icon">connected</a>
+								<a href="_data_structures_disjoint_set_quickunionuf_.quickunionuf.html#findroot" class="tsd-kind-icon">find<wbr>Root</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_data_structures_disjoint_set_quickfinduf_.quickfinduf.html#find" class="tsd-kind-icon">find</a>
+								<a href="_data_structures_disjoint_set_quickunionuf_.quickunionuf.html#getcount" class="tsd-kind-icon">get<wbr>Count</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_data_structures_disjoint_set_quickfinduf_.quickfinduf.html#getcount" class="tsd-kind-icon">get<wbr>Count</a>
+								<a href="_data_structures_disjoint_set_quickunionuf_.quickunionuf.html#tostring" class="tsd-kind-icon">to<wbr>String</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_data_structures_disjoint_set_quickfinduf_.quickfinduf.html#tostring" class="tsd-kind-icon">to<wbr>String</a>
+								<a href="_data_structures_disjoint_set_quickunionuf_.quickunionuf.html#union" class="tsd-kind-icon">union</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_data_structures_disjoint_set_quickfinduf_.quickfinduf.html#union" class="tsd-kind-icon">union</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_data_structures_disjoint_set_quickfinduf_.quickfinduf.html#validate" class="tsd-kind-icon">validate</a>
+								<a href="_data_structures_disjoint_set_quickunionuf_.quickunionuf.html#validate" class="tsd-kind-icon">validate</a>
 							</li>
 						</ul>
 					</li>

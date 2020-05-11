@@ -15,6 +15,13 @@ export class QuickFindUF {
         }).map((el: any, index: number) => index);
     }
 
+    /**
+     *  @return The number of unique component sets in id[]
+     */
+    public getCount(): number {
+        return new Set(this.id).size;
+    }
+
     /**  
      * [[`connected`]] is **Deprecated** according to [official Java code](https://github.com/kevin-wayne/algs4/blob/master/src/main/java/edu/princeton/cs/algs4/QuickFindUF.java#L124)
      * 
@@ -59,6 +66,9 @@ export class QuickFindUF {
         return this.id[i];
     }
 
+    /**
+     * Validate that `i` is a valid index in the `id` array
+     */
     public validate(i: number): boolean {
         const currentLength = this.id.length;
         if (i < 0 || i > currentLength) {
@@ -96,13 +106,7 @@ export class QuickFindUF {
         }
     }
 
-    /**
-     *  @return The number of unique component sets in id[]
-     */
-    public getCount(): number {
-        return new Set(this.id).size;
-    }
-
+  
     public toString(): string {
         return JSON.stringify(this.id);
     }
